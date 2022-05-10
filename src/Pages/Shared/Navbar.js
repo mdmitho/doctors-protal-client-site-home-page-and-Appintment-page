@@ -48,10 +48,12 @@ const Navbar = () => {
             {menuItem}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case font-bold text-xl">Doctor Portal</a>
+        <Link to="/" className="btn btn-ghost normal-case font-bold text-xl">
+          Doctor Portal
+        </Link>
       </div>
-      <div className="navbar-center hidden lg:block lg:flex">
-        <ul className="menu menu-horizontal p-0">{menuItem}</ul>
+      <div className="navbar-center   lg:flex sm:hidden   ">
+        <ul className="menu menu-horizontal  p-0">{menuItem}</ul>
       </div>
       <div className="navbar-end ">
         <Link to="/login" className="btn ">
